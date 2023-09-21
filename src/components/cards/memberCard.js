@@ -24,10 +24,10 @@ const MemberCard = ({
 
   return (
     <>
-      <div className="flex flex-col w-[28%] items-center gap-y-3 bg-white rounded-md p-2 hover:shadow-2xl  shadow-black">
+      <div className="flex flex-col w-60 items-center gap-y-3 bg-white rounded-md p-2 hover:shadow-2xl  shadow-black">
         <h3 className="font-bold text-lg">{name}</h3>
         <span>{title}</span>
-        <img className="w-56 h-80 object-cover object-top" src={image} />
+        <img className="w-52 h-80 object-cover object-top" src={image} />
         <div className="flex gap-x-2 items-center text-black">
           {socialLinks.map(({ name, link }) =>
             link ? (

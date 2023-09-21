@@ -8,8 +8,8 @@ const Header = () => {
   ];
   return (
     <>
-      <div className="flex  px-[4%] justify-between items-center bg-[#636b72] shadow-2xl  shadow-[#2f4051]">
-        <div className="flex mb-5 gap-x-[0.5] w-[50%]">
+      <div className="flex  px-[4%] justify-between items-center bg-[#0e4e51] shadow-2xl  shadow-[#2f4051]">
+        <div className="flex mb-3 gap-x-[0.5] w-[50%]">
           {links.map(({ id, name, path }) => (
             <a
               className="hover:bg-[#1c898d] text-center block font-light  text-white text-[12px] w-full  h-14  -mt-6 rounded-b-[3rem]  pt-7 bg-[#2ac4c8]"
