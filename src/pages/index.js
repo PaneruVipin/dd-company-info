@@ -9,7 +9,7 @@ import Team from "@/components/scrollingPages/team";
 
 export default function Home() {
   return (
-    <main className={`min-h-screen py-[3%] px-[4%] `}>
+    <main className={`min-h-screen py-[3%] px-[4%] font-sans font-semibold text-[#6e6e6e] `}>
       <section id="introduction">
         <Introduction />
       </section>

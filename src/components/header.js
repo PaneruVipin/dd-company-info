@@ -8,7 +8,7 @@ const Header = () => {
   ];
   return (
     <>
-      <div className="flex  px-[4%] justify-between items-center">
+      <div className="flex  px-[4%] justify-between items-center bg-[#636b72] shadow-2xl  shadow-[#2f4051]">
         <div className="flex mb-5 gap-x-[0.5] w-[50%]">
           {links.map(({ id, name, path }) => (
             <a

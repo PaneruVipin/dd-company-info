@@ -41,11 +41,12 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className=" bg-footer_bg break-words ">
+      <div className=" bg-footer_bg break-words bg-no-repeat bg-right text-[15px] font-medium">
+        <div className="bg-[#0e4e51] bg-opacity-95">
         <div className="flex justify-between  px-[2%] py-[4%]">
-          <div className="flex flex-col space-y-4 max-w-[25%]">
+          <div className="flex flex-col space-y-4 max-w-[25%] ">
             <h3 className="text-xl font-bold text-white">About</h3>
-            <p>
+            <p className="text-gray-400  ">
               Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do
               eiusmod tempor incididunt ut labore.
             </p>
@@ -61,7 +62,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white">Links</h3>
             {links.map(({ id, name, link }) => (
               <a
-                className="   max-w-fit  underline-animation text-gray-700 hover:text-white "
+                className="   max-w-fit  underline-animation text-gray-400   hover:text-white "
                 key={id}
                 href={link}
               >
@@ -73,7 +74,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white">Services</h3>
             {services.map(({ id, name, link }) => (
               <a
-                className="  max-w-fit   underline-animation text-gray-700 hover:text-white "
+                className="  max-w-fit   underline-animation text-gray-400   hover:text-white "
                 key={id}
                 href={link}
               >
@@ -85,7 +86,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white">Contacts</h3>
             {contacts.map(({ id, name, link }) => (
               <a
-                className=" max-w-fit  underline-animation text-gray-700 hover:text-white "
+                className=" max-w-fit  underline-animation text-gray-400   hover:text-white "
                 key={id}
                 href={link}
               >
@@ -95,12 +96,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="py-10 border-t border-t-gray-400">
-          <p className="text-center text-md font-normal text-white">
+          <p className="text-center   text-gray-400  ">
             Copyright © 2023{" "}
             <span className="text-[#2ac4c8]">Climstripe Shift</span> All Rights
             Reserved. | Dev. By:
             <span className="text-[#2ac4c8]"> Digital Dezire</span>
           </p>
+        </div>
         </div>
       </div>
     </>

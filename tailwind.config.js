@@ -23,7 +23,7 @@ module.exports = {
           "url('https://img.freepik.com/premium-photo/summer-travel-vacation-holiday-concept-wooden-pier-sunset-phuket-thailand_960782-2156.jpg?w=2000')",
         intro_image_6:
           "url('https://img.freepik.com/premium-photo/purple-sunset-lake-with-wooden-dock-mountains-background_849761-19005.jpg?w=2000')",
-          footer_bg:"url('./footer-bg-1.png')"
+          footer_bg: "url('/footer-bg-1.png')",
       },
     },
   },
