@@ -5,7 +5,7 @@ const Introduction = () => {
   const [bgCount, setBgCount] = useState(1);
   const [bg, setBg] = useState("bg-intro_image_1");
   useEffect(() => {
-    if (bgCount < 7) {
+    if (bgCount < 3) {
       setTimeout(() => {
         setBg("bg-intro_image_" + bgCount);
         setBgCount(bgCount + 1);
@@ -15,18 +15,15 @@ const Introduction = () => {
     }
   }, [bgCount]);
   return (
-    <div className={`min-h-screen bg-cover bg-center  ${bg}`}>
+    <div
+      className={`min-h-screen max-w-screen bg-cover bg-center font-bold text-[#2ac4c8] text-[3.67rem] ${bg} p-10 `}
+    >
       <BackgroundImageLoader
-        possibleClasses={[
-          "bg-intro_image_1",
-          "bg-intro_image_2",
-          "bg-intro_image_3",
-          "bg-intro_image_4",
-          "bg-intro_image_5",
-          "bg-intro_image_6",
-        ]}
+        possibleClasses={["bg-intro_image_1", "bg-intro_image_2"]}
       />
-      this is Introduction page{" "}
+      <p className="w-[55%] break-words">
+        GLOBAL TEMPERATURE CHANGE (1850-2022)
+      </p>
     </div>
   );
 };

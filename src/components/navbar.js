@@ -14,12 +14,12 @@ const Navbar = () => {
       <div className="flex justify-between items-center pr-[2%]  bg-[#2ac4c8] py-4">
         <div className="flex gap-x-6 ml-[2%]">
           <img
-            className="w-40 h-8 object-contain mr-10"
+            className="w-44 h-10 object-contain mr-10"
             src="css-logo.png"
           ></img>
           {navs.map(({ id, name, path }) => (
             <Link
-              className=" text-white font-bold hover:text-[#ffde59]"
+              className=" text-white font-bold hover:text-[#0e4e51]"
               key={id}
               href={path}
             >
@@ -28,7 +28,7 @@ const Navbar = () => {
           ))}
         </div>
         <Link
-          className=" text-white font-bold hover:text-[#ffde59]"
+          className=" text-white font-bold hover:text-[#0e4e51]"
           href="#investor_info"
         >
           Investors Info
