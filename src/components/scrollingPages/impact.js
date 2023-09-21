@@ -36,7 +36,7 @@ const Impact = () => {
   return (
     <div className="text-center space-y-6">
       <span className="text-[#2ac4c8]">Sale Your Waste</span>
-      <h1 className="font-bold text-[28px] text-[#636b72]">Our Impact</h1>
+      <h1 className="font-bold text-[28px] text-black">Our Impact</h1>
       <div className="flex w-1/2 items-center">
         <span className="w-full h-0.5 bg-[#2ac4c8]"></span>
         <span className=" w-full text-[#2ac4c8]">THE GREEN SAMAN SHOP</span>

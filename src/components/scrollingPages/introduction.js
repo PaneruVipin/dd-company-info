@@ -23,7 +23,7 @@ const Introduction = () => {
       />
       <p
         style={{ lineHeight: 1.1 }}
-        className={`w-[55%] break-words mt-10 ml-10 ${
+        className={`w-[55%] break-words mt-[6%] ml-[12%] ${
           bgCount == 2 ? "text-black" : ""
         }`}
       >

@@ -12,7 +12,9 @@ const Header = () => {
         <div className="flex mb-3 gap-x-[0.5] w-[50%]">
           {links.map(({ id, name, path }) => (
             <a
-              className="hover:bg-[#1c898d] text-center block font-light  text-white text-[12px] w-full  h-14  -mt-6 rounded-b-[3rem]  pt-7 bg-[#2ac4c8]"
+              className={`hover:bg-[#1c898d] text-center block font-light  text-white text-[12px] w-full  h-14  -mt-6 rounded-b-[3rem]  pt-7 ${
+                name == "CSS" ? "bg-[#1c898d]" : "bg-[#2ac4c8]"
+              } `}
               key={id}
               href={path}
               target="_blank"

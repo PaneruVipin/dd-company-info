@@ -1,7 +1,7 @@
 const Ecosystem = () => {
   return <div className="text-center ">
   <h1 className="font-bold text-[28px] text-black">Ecosystem Page</h1>
-  <p className="text-md font-sans font-semibold text-[#6e6e6e] ">
+  <p className="text-md font-sans font-semibold text-black ">
     We are a diverse, international team of around 100 young volunteers
     with a broad range of backgrounds and experiences. We are united by a
     belief in climate solutions, through policy reform as well as
