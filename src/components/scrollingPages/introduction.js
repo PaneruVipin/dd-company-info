@@ -21,7 +21,7 @@ const Introduction = () => {
       <BackgroundImageLoader
         possibleClasses={["bg-intro_image_1", "bg-intro_image_2"]}
       />
-      <p className="w-[55%] break-words">
+      <p style={{ lineHeight: 1.1 }} className="w-[55%] break-words ">
         GLOBAL TEMPERATURE CHANGE (1850-2022)
       </p>
     </div>

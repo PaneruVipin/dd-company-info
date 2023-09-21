@@ -9,27 +9,27 @@ import Team from "@/components/scrollingPages/team";
 
 export default function Home() {
   return (
-    <main className={`min-h-screen font-sans font-semibold text-[#6e6e6e] `}>
+    <main className={`min-h-screen font-sans font-semibold text-[#f4f4f4] `}>
       <section id="introduction">
         <Introduction />
       </section>
-      <div className="min-h-screen py-[3%] px-[4%]">
-        <section id="about" className="pt-20">
+      <div className="min-h-screen ">
+        <section id="about" className="pt-20 py-[3%] px-[4%]">
           <About />
         </section>
-        <section id="mission" className="pt-20">
+        <section id="mission" className="pt-20 py-[3%] px-[4%]">
           <Mission />
         </section>
-        <section id="ecosystem" className="pt-20">
+        <section id="ecosystem" className="pt-20 py-[3%] px-[4%]">
           <Ecosystem />
         </section>
-        <section id="impact" className="pt-20">
+        <section id="impact" className="pt-20 bg-white py-[3%] px-[4%]">
           <Impact />
         </section>
-        <section id="team" className="pt-20">
+        <section id="team" className="pt-20 py-[3%] px-[4%]">
           <Team />
         </section>
-        <section id="investor_info" className="pt-20">
+        <section id="investor_info" className="pt-20 py-[3%] px-[4%]">
           <InvestorInfo />
         </section>
       </div>
