@@ -9,8 +9,12 @@ const Team = () => {
       row: 1,
       popularity: 1,
       title: "CEO & Founder",
-      description:
-        "Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod tempor incididunt ut labore.",
+      socialLinks: {
+        linkedin: "htpps://google.com",
+        facebook: "htpps://google.com",
+        instagram: "htpps://google.com",
+        twitter: "htpps://google.com",
+      },
       image:
         "https://images.squarespace-cdn.com/content/v1/54c6eb0ce4b0f6cdd67c1196/1500758346726-PRZMI7L74RDNAGGPVRRK/Headshot_47.jpg",
     },
@@ -20,8 +24,12 @@ const Team = () => {
       row: 2,
       popularity: 2,
       title: "CEO & Founder",
-      description:
-        "Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod tempor incididunt ut labore.",
+      socialLinks: {
+        linkedin: "htpps://google.com",
+        facebook: "htpps://google.com",
+        instagram: "htpps://google.com",
+        twitter: "htpps://google.com",
+      },
       image:
         "https://thumbs.dreamstime.com/b/african-american-female-model-winter-hat-scarf-one-studio-head-shots-clothes-89597891.jpg",
     },
@@ -31,8 +39,12 @@ const Team = () => {
       row: 3,
       popularity: 1,
       title: "CEO & Founder",
-      description:
-        "Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod tempor incididunt ut labore.",
+      socialLinks: {
+        linkedin: "htpps://google.com",
+        facebook: "htpps://google.com",
+        instagram: "htpps://google.com",
+        twitter: "htpps://google.com",
+      },
       image:
         "https://i.pinimg.com/236x/cc/4a/6c/cc4a6c12fedb412d6e1f52ff691e6600--pageant-headshots-model-headshots.jpg",
     },
@@ -42,8 +54,12 @@ const Team = () => {
       popularity: 4,
       name: "Sophia",
       title: "CEO & Founder",
-      description:
-        "Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod tempor incididunt ut labore.",
+      socialLinks: {
+        linkedin: "htpps://google.com",
+        facebook: "htpps://google.com",
+        instagram: "htpps://google.com",
+        twitter: "htpps://google.com",
+      },
       image:
         "https://images.squarespace-cdn.com/content/v1/54c6eb0ce4b0f6cdd67c1196/1642223720668-I2XL35T6SMPTDZPOTRFJ/DCP_0085.jpg",
     },
@@ -53,8 +69,12 @@ const Team = () => {
       row: 2,
       popularity: 3,
       title: "CEO & Founder",
-      description:
-        "Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod tempor incididunt ut labore.",
+      socialLinks: {
+        linkedin: "htpps://google.com",
+        facebook: "htpps://google.com",
+        instagram: "htpps://google.com",
+        twitter: "htpps://google.com",
+      },
       image:
         "https://images.squarespace-cdn.com/content/v1/54c6eb0ce4b0f6cdd67c1196/1500758346726-PRZMI7L74RDNAGGPVRRK/Headshot_47.jpg",
     },
@@ -64,8 +84,12 @@ const Team = () => {
       row: 2,
       popularity: 1,
       title: "CEO & Founder",
-      description:
-        "Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod tempor incididunt ut labore.",
+      socialLinks: {
+        linkedin: "htpps://google.com",
+        facebook: "htpps://google.com",
+        instagram: "htpps://google.com",
+        twitter: "htpps://google.com",
+      },
       image:
         "https://images.squarespace-cdn.com/content/v1/513aacf4e4b0abff73b93917/1476901462774-16NOFQRO62SZB63ZCM8A/morgan-hs-001.jpg",
     },
@@ -75,15 +99,19 @@ const Team = () => {
       row: 1,
       popularity: 2,
       title: "CTO & Founder",
-      description:
-        "Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod tempor incididunt ut labore.",
+      socialLinks: {
+        linkedin: "htpps://google.com",
+        facebook: "htpps://google.com",
+        instagram: "htpps://google.com",
+        twitter: "htpps://google.com",
+      },
       image:
         "https://upload.wikimedia.org/wikipedia/commons/f/fe/Michelle_Borromeo_Actor_Headshots_30.jpg",
     },
   ];
 
   return (
-    <div className="text-center ">
+    <div className="text-center space-y-10">
       <h1 className="font-bold text-[28px] text-black">Leadership Team</h1>
       <div className="space-y-6 md:space-y-12">
         <Members data={teamMembers} />
