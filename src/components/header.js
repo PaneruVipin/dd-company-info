@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex mb-3  w-[50%]">
           {links.map(({ id, name, path }) => (
             <a
-              className={` bg-opacity-85 hover:h-16 -ml-2 text-center block font-light  text-white text-[12px] w-full   rounded-b-[3rem]  pt-7 ${
+              className={` bg-opacity-85 hover:h-16 -ml-2 text-center block font-light  text-white text-[13px] w-full   rounded-b-[3rem]  pt-7 ${
                 id == 1
                   ? "bg-[#fa0644] h-16  -mt-6"
                   : id == 2

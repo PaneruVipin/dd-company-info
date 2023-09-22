@@ -90,3 +90,17 @@ body {
       background-color: rgba(68, 179, 31, 0.6); /* End color with 80% opacity */
   }
 }
+
+.bg-zoom {
+  animation: zoomImage 3s linear alternate; /* Apply the animation */
+}
+
+/* Define the keyframes for the background image zoom animation */
+@keyframes zoomImage {
+  0% {
+      background-size: "cover" /* Initial size (no zoom) */
+  }
+  100% {
+      background-size: 150%; /* End size (zoomed to 120%) */
+  }
+}

@@ -25,7 +25,7 @@ const Introduction = () => {
           <p>#BRINGBACKBLUE</p>
           <p
             style={{ lineHeight: 1.1 }}
-            className=" p-4 bg-[#23d5d7] w-fit bg-opacity-75 rounded-3xl text-[2.5rem]"
+            className=" p-4 bg-[#4e8a94] w-fit bg-opacity-75 rounded-3xl text-[2.5rem]"
           >
             Lets bring climate
             <br /> stripes from red to blue <br />
