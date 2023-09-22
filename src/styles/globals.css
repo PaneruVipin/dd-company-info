@@ -61,23 +61,16 @@ body {
   font-family: var(--thm-font-2);
 }
 
-    .container {
-            width: 300px; /* Set the width of the container */
-            position: relative;
-            background-color: #ffcc00; /* Background color for the shape */
-            padding: 20px;
-        }
+.rotated-y {
+  animation: rotateY 3s linear; /* Apply the animation without the 'infinite' keyword */
+}
 
-        /* Define the custom shape using CSS clip-path */
-        .custom-shape {
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
-            background-color: #fff; /* Background color for the text */
-            padding: 10px;
-        }
-
-        /* Additional styles for the text */
-        .text {
-            color: #333; /* Text color */
-            font-size: 16px;
-            line-height: 1.4;
-        }
+/* Define the keyframes for the animation */
+@keyframes rotateY {
+  0% {
+      transform: rotateX(-90deg); /* Start rotation angle */
+  }
+  100% {
+      transform: rotateX(0deg); /* End rotation angle (180 degrees for one half rotation) */
+  }
+}

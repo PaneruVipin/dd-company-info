@@ -38,7 +38,7 @@ const Introduction = () => {
       >
         <img
           className="h-[80vh] w-[40%] object-cover rounded-2xl"
-          src="https://www.thekabadiwala.com/images/individual/plant.webp"
+          src="plant.jpg"
         />
         <div className="space-y-8">
           <h3
