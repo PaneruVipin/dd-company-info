@@ -47,13 +47,21 @@ const Introduction = () => {
             }}
             className=" font-[700] leading-[105%]"
           >
-            Know your Contribution to the environment
+            What are climate stripes
           </h3>
           <p className="text-[1.125rem] font-[400] leading-[150%]">
-            The Kabadiwala app allows you to check your environmental impact for
-            the amount of scrap you sold to us. The impact is shown in terms of
-            the natural resources you saved from over-exploitation or the units
-            of energy you preserved for a sustainable future.
+            Climate stripes, also known as climate barcodes or climate
+            timelines, are a visual representation of global or regional
+            temperature data over a period of time, typically decades or
+            centuries. They were popularized by climate scientist Ed Hawkins and
+            are used to communicate the long-term trends and variations in
+            temperature. The concept behind climate stripes is simple yet
+            powerful. Each stripe in the bar represents a single year's
+            temperature, with colors indicating whether that year was warmer or
+            cooler than the long-term average. Typically, shades of blue are
+            used for cooler years, while shades of red are used for warmer
+            years. The result is a visually striking and intuitive
+            representation of temperature changes over time.
           </p>
           <div className="flex items-center gap-x-6 font-normal">
             {icons.map(({ id, name, icon: Icon }) => (

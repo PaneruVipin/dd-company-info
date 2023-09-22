@@ -33,10 +33,10 @@ const MemberCard = ({
         >
           <div className=" absolute border inset-0"></div>
         </div>
-        <div className="space-y-6 h-40">
+        <div className="space-y-6 ">
           <h3 className="font-bold text-lg ">{name}</h3>
           <span>{title}</span>
-          <div className="flex gap-x-2 items-center text-black">
+          {<div className="flex gap-x-2 items-center text-black">
             {socialLinks.map(({ name, link }) =>
               link ? (
                 <a
@@ -56,7 +56,7 @@ const MemberCard = ({
                 </a>
               ) : null
             )}
-          </div>
+          </div>}
         </div>
         {/* <p>{description}</p> */}
       </div>
