@@ -112,7 +112,7 @@ const Team = () => {
 
   return (
     <div className="text-center space-y-10">
-      <h1 className="font-bold text-[28px] text-black">Leadership Team</h1>
+      <h1 className="font-bold font-family-1 text-[50px] text-black">Leadership Team</h1>
       <div className="space-y-6 md:space-y-12">
         <Members data={teamMembers} />
       </div>

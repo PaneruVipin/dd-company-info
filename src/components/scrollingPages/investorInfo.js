@@ -108,7 +108,7 @@ const InvestorInfo = () => {
   ];
   return (
     <div className="text-center space-y-10">
-      <h1 className="font-bold text-[28px] text-black">Our Investors</h1>
+      <h1 className="font-bold font-family-1 text-[50px] text-black">Our Investors</h1>
       <div className="space-y-6 md:space-y-12">
         <Members data={investors} />
       </div>

@@ -1,25 +1,41 @@
 import { IoLogoGooglePlaystore, IoLogoAppleAppstore } from "react-icons/io5";
+import { BsChevronDoubleDown } from "react-icons/bs";
 const Header = () => {
   const links = [
-    { id: 1, name: "CSS", path: "https://google.com" },
-    { id: 2, name: "KabadPe", path: "https://google.com" },
-    { id: 3, name: "Green Saman Shop", path: "https://google.com" },
-    { id: 4, name: "Climconnect", path: "https://google.com" },
+    { id: 1, name: "CLIMSTRIPE SHIFT", path: "https://google.com" },
+    { id: 2, name: "KABADPE", path: "https://google.com" },
+    { id: 3, name: "GREENSAMAN", path: "https://google.com" },
+    { id: 4, name: "CLIMCONNECT", path: "https://google.com" },
   ];
   return (
     <>
-      <div className="flex  px-[4%] justify-between items-center bg-[#0e4e51] shadow-2xl  shadow-[#2f4051]">
-        <div className="flex mb-3 gap-x-[0.5] w-[50%]">
+      <div className="flex  px-[4%] justify-between items-center">
+        <div className="flex mb-3  w-[50%]">
           {links.map(({ id, name, path }) => (
             <a
-              className={`hover:bg-[#1c898d] text-center block font-light  text-white text-[12px] w-full  h-14  -mt-6 rounded-b-[3rem]  pt-7 ${
-                name == "CSS" ? "bg-[#1c898d]" : "bg-[#2ac4c8]"
+              className={` bg-opacity-85 hover:h-16 -ml-2 text-center block font-light  text-white text-[12px] w-full   rounded-b-[3rem]  pt-7 ${
+                id == 1
+                  ? "bg-[#fa0644] h-16  -mt-6"
+                  : id == 2
+                  ? "bg-[#4dbfc0] h-14  -mt-6"
+                  : id == 3
+                  ? "bg-[#076636] h-14  -mt-6"
+                  : id == 4
+                  ? "bg-[#03aeef] h-14  -mt-6"
+                  : ""
               } `}
               key={id}
               href={path}
               target="_blank"
             >
-              <span className="block m-auto"> {name}</span>
+              <>
+                <span className="block ">
+                  {" "}
+                  {name}
+                  <br />
+                  {id == 1 ? <BsChevronDoubleDown className="mx-auto" /> : null}
+                </span>
+              </>
             </a>
           ))}
         </div>

@@ -24,32 +24,37 @@ const MemberCard = ({
 
   return (
     <>
-      <div className="flex text-black flex-col w-60  items-center gap-y-3 bg-white rounded-md p-2 hover:shadow-2xl  shadow-black">
-        <h3 className="font-bold text-lg">{name}</h3>
-        <span>{title}</span>
-        <img className="w-52 h-80 object-cover object-top" src={image} />
-        <div className="flex gap-x-2 items-center text-black">
-          {socialLinks.map(({ name, link }) =>
-            link ? (
-              <a
-                href={link}
-                target="_blank"
-                className="bg-[#2ac4c8] block hover:bg-[#1c898d] cursor-pointer p-3 rounded-full"
-              >
-                {name == "linkedin" ? (
-                  <AiFillLinkedin  />
-                ) : name == "instagram" ? (
-                  <AiFillInstagram />
-                ) : name == "facebook" ? (
-                  <AiFillFacebook />
-                ) : name == "twitter" ? (
-                  <AiFillTwitterCircle />
-                ) : null}
-              </a>
-            ) : null
-          )}
+      <div className="flex relative z-0 text-black flex-col w-60  items-center gap-y-3 bg-white rounded-md p-2 hover:shadow-2xl  shadow-black">
+        <div className=" shrink relative z-0">
+          <div className=" absolute border border-red-500 inset-0"></div>
+          <img className="w-52 h-60 object-cover object-top" src={image} />
         </div>
-        <p>{description}</p>
+        <div className="space-y-6 h-40">
+          <h3 className="font-bold text-lg ">{name}</h3>
+          <span>{title}</span>
+          <div className="flex gap-x-2 items-center text-black">
+            {socialLinks.map(({ name, link }) =>
+              link ? (
+                <a
+                  href={link}
+                  target="_blank"
+                  className="bg-[#2ac4c8] block hover:bg-[#1c898d] cursor-pointer p-3 rounded-full"
+                >
+                  {name == "linkedin" ? (
+                    <AiFillLinkedin />
+                  ) : name == "instagram" ? (
+                    <AiFillInstagram />
+                  ) : name == "facebook" ? (
+                    <AiFillFacebook />
+                  ) : name == "twitter" ? (
+                    <AiFillTwitterCircle />
+                  ) : null}
+                </a>
+              ) : null
+            )}
+          </div>
+        </div>
+        {/* <p>{description}</p> */}
       </div>
     </>
   );
