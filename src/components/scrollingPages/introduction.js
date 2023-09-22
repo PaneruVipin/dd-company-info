@@ -41,10 +41,15 @@ const Introduction = () => {
           src="https://www.thekabadiwala.com/images/individual/plant.webp"
         />
         <div className="space-y-8">
-          <h3 style={{ lineHeight: 1.1 }} className="text-[3.67rem] font-thin">
+          <h3
+            style={{
+              fontSize: "calc(1.525rem + 2.0625vw)",
+            }}
+            className=" font-[700] leading-[105%]"
+          >
             Know your Contribution to the environment
           </h3>
-          <p style={{ lineHeight: 1.1 }} className="text-lg font-thin">
+          <p className="text-[1.125rem] font-[400] leading-[150%]">
             The Kabadiwala app allows you to check your environmental impact for
             the amount of scrap you sold to us. The impact is shown in terms of
             the natural resources you saved from over-exploitation or the units

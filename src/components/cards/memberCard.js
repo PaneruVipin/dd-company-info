@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   AiFillTwitterCircle,
   AiFillFacebook,
@@ -15,6 +16,7 @@ const MemberCard = ({
   facebook,
   twitter,
 }) => {
+  const [showMeadiaIcons, setShowMeadiaIcons] = useState(false);
   const socialLinks = [
     { name: "linkedin", link: linkedin },
     { name: "instagram", link: instagram },
@@ -24,10 +26,12 @@ const MemberCard = ({
 
   return (
     <>
-      <div className="flex relative z-0 text-black flex-col w-60  items-center gap-y-3 bg-white rounded-md p-2 hover:shadow-2xl  shadow-black">
-        <div className=" shrink relative z-0">
-          <div className=" absolute border border-red-500 inset-0"></div>
-          <img className="w-52 h-60 object-cover object-top" src={image} />
+      <div className="flex relative z-0 text-black flex-col w-60 h-80 justify-between  items-center gap-y-3 bg-white rounded-md p-2 hover:shadow-2xl  shadow-black">
+        <div
+          style={{ backgroundImage: `url(${image})` }}
+          className="h-full w-full z-0 relative bg-cover bg-center"
+        >
+          <div className=" absolute border inset-0"></div>
         </div>
         <div className="space-y-6 h-40">
           <h3 className="font-bold text-lg ">{name}</h3>
