@@ -84,9 +84,9 @@ body {
 /* Define the keyframes for the background color animation */
 @keyframes fillBackground {
   0% {
-      background-color: rgba(129, 106, 106, 0.6); /* Start color with 80% opacity */
+      background-color: rgba(155, 167, 151, 0.6); /* Start color with 80% opacity */
   }
   100% {
-      background-color: rgba(239, 68, 68, 0.6); /* End color with 80% opacity */
+      background-color: rgba(68, 179, 31, 0.6); /* End color with 80% opacity */
   }
 }

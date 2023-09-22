@@ -38,7 +38,7 @@ const MemberCard = ({
           className="h-full w-full z-0 relative bg-cover bg-center "
         >
           {showMeadiaIcons ? (
-            <div className="absolute border inset-0 bg-fill-anim-1 bg-red-500 bg-opacity-60"></div>
+            <div className="absolute border inset-0 bg-fill-anim-1 bg-[#44b31f] bg-opacity-60"></div>
           ) : null}
         </div>
         <div
