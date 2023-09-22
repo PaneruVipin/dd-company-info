@@ -29,20 +29,20 @@ const MemberCard = ({
       <div
         onMouseEnter={() => setShowMeadiaIcons(true)}
         onMouseLeave={() => setShowMeadiaIcons(false)}
-        className="flex relative z-0 text-black flex-col w-60 h-80 justify-between  items-center gap-y-3 bg-white rounded-md p-2 hover:shadow-2xl  shadow-black"
+        className={`flex relative z-0 text-black flex-col w-60 h-80 justify-between pb-2  items-center gap-y-3 bg-white rounded-md ${
+          showMeadiaIcons ? "" : "p-6"
+        }  hover:shadow-2xl  shadow-black`}
       >
         <div
           style={{ backgroundImage: `url(${image})` }}
-          className="h-full w-full z-0 relative bg-cover bg-center"
+          className="h-full w-full z-0 relative bg-cover bg-center "
         >
           {showMeadiaIcons ? (
             <div className="absolute border inset-0 bg-red-500 bg-opacity-60"></div>
           ) : null}
         </div>
         <div
-          className={`w-full space-y-6  ${
-            showMeadiaIcons ? "rotated-y shadow-md" : ""
-          }`}
+          className={`w-full space-y-6  ${showMeadiaIcons ? "rotated-y" : ""}`}
         >
           <h3 className="font-bold text-lg ">{name}</h3>
           <span>{title}</span>

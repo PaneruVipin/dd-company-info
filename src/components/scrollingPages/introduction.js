@@ -34,10 +34,10 @@ const Introduction = () => {
         </div>
       </div>
       <div
-        className={`flex gap-x-10 justify-between font-family-1 items-center text-[black] px-[7%] py-[3%]  bg-white`}
+        className={`flex gap-x-10 justify-between font-family-1 items-center text-[black]  px-[7%] py-[3%]  bg-white`}
       >
         <img
-          className="h-[80vh] w-[40%] object-cover rounded-2xl"
+          className="h-[80vh] w-[40%] object-contain rounded-2xl"
           src="plant.jpg"
         />
         <div className="space-y-8">

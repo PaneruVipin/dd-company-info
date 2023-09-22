@@ -62,7 +62,7 @@ body {
 }
 
 .rotated-y {
-  animation: rotateY 3s linear; /* Apply the animation without the 'infinite' keyword */
+  animation: rotateY 2s linear; /* Apply the animation without the 'infinite' keyword */
 }
 
 /* Define the keyframes for the animation */
