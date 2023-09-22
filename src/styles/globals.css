@@ -62,15 +62,31 @@ body {
 }
 
 .rotated-y {
-  animation: rotateY 2s linear; /* Apply the animation without the 'infinite' keyword */
+  animation: rotateY 1s linear; /* Apply the animation without the 'infinite' keyword */
+  transition-delay: 200ms;
 }
 
 /* Define the keyframes for the animation */
 @keyframes rotateY {
   0% {
-      transform: rotateX(-90deg); /* Start rotation angle */
+      transform: rotateX(-90deg);/* Start rotation angle */
   }
   100% {
-      transform: rotateX(0deg); /* End rotation angle (180 degrees for one half rotation) */
+      transform: rotate3X(0deg);/* End rotation angle (180 degrees for one half rotation) */
+  }
+}
+
+
+.bg-fill-anim-1 {
+  animation: fillBackground 1.5s linear; /* Apply the animation */
+}
+
+/* Define the keyframes for the background color animation */
+@keyframes fillBackground {
+  0% {
+      background-color: rgba(129, 106, 106, 0.6); /* Start color with 80% opacity */
+  }
+  100% {
+      background-color: rgba(239, 68, 68, 0.6); /* End color with 80% opacity */
   }
 }

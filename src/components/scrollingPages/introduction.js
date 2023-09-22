@@ -47,7 +47,8 @@ const Introduction = () => {
             }}
             className=" font-[700] leading-[105%]"
           >
-            What are climate stripes
+            What are <br />
+            <span className="text-[#44b31f]"> climate stripes</span>
           </h3>
           <p className="text-[1.125rem] font-[400] leading-[150%]">
             Climate stripes, also known as climate barcodes or climate
@@ -56,6 +57,7 @@ const Introduction = () => {
             centuries. They were popularized by climate scientist Ed Hawkins and
             are used to communicate the long-term trends and variations in
             temperature. <br />
+            <br />
             The concept behind climate stripes is simple yet powerful. Each
             stripe in the bar represents a single year's temperature, with
             colors indicating whether that year was warmer or cooler than the

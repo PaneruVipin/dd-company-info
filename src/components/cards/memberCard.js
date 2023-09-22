@@ -29,8 +29,8 @@ const MemberCard = ({
       <div
         onMouseEnter={() => setShowMeadiaIcons(true)}
         onMouseLeave={() => setShowMeadiaIcons(false)}
-        className={`flex relative z-0 text-black flex-col w-60 h-80 justify-between pb-2  items-center gap-y-3 bg-white rounded-md ${
-          showMeadiaIcons ? "" : "p-6"
+        className={`flex relative z-0 text-black flex-col p-[5px] w-60 h-80 justify-between pb-2  items-center gap-y-3 bg-white rounded-md ${
+          showMeadiaIcons ? "" : ""
         }  hover:shadow-2xl  shadow-black`}
       >
         <div
@@ -38,15 +38,17 @@ const MemberCard = ({
           className="h-full w-full z-0 relative bg-cover bg-center "
         >
           {showMeadiaIcons ? (
-            <div className="absolute border inset-0 bg-red-500 bg-opacity-60"></div>
+            <div className="absolute border inset-0 bg-fill-anim-1 bg-red-500 bg-opacity-60"></div>
           ) : null}
         </div>
         <div
-          className={`w-full space-y-6  ${showMeadiaIcons ? "rotated-y" : ""}`}
+          className={`w-full space-y-6  ${
+            showMeadiaIcons ? "" : ""
+          }`}
         >
           <h3 className="font-bold text-lg ">{name}</h3>
           <span>{title}</span>
-          {showMeadiaIcons ? (
+          {/* {showMeadiaIcons ? ( */}
             <div className="flex justify-center gap-x-2 items-center text-black">
               {socialLinks.map(({ name, link }) =>
                 link ? (
@@ -68,7 +70,7 @@ const MemberCard = ({
                 ) : null
               )}
             </div>
-          ) : null}
+          {/* ) : null} */}
         </div>
         {/* <p>{description}</p> */}
       </div>
