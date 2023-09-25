@@ -61,21 +61,6 @@ body {
   font-family: var(--thm-font-2);
 }
 
-.rotated-y {
-  animation: rotateY 1s linear; /* Apply the animation without the 'infinite' keyword */
-  transition-delay: 200ms;
-}
-
-/* Define the keyframes for the animation */
-@keyframes rotateY {
-  0% {
-      transform: rotateX(-90deg);/* Start rotation angle */
-  }
-  100% {
-      transform: rotate3X(0deg);/* End rotation angle (180 degrees for one half rotation) */
-  }
-}
-
 
 .bg-fill-anim-1 {
   animation: fillBackground 1.5s linear; /* Apply the animation */
@@ -91,16 +76,3 @@ body {
   }
 }
 
-.bg-zoom {
-  animation: zoomImage 3s linear alternate; /* Apply the animation */
-}
-
-/* Define the keyframes for the background image zoom animation */
-@keyframes zoomImage {
-  0% {
-      background-size: "cover" /* Initial size (no zoom) */
-  }
-  100% {
-      background-size: 150%; /* End size (zoomed to 120%) */
-  }
-}
