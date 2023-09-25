@@ -4,7 +4,6 @@ import Ecosystem from "@/components/scrollingPages/ecosystem";
 import Impact from "@/components/scrollingPages/impact";
 import Introduction from "@/components/scrollingPages/introduction";
 import InvestorInfo from "@/components/scrollingPages/investorInfo";
-import Mission from "@/components/scrollingPages/mission";
 import Team from "@/components/scrollingPages/team";
 
 export default function Home() {
@@ -13,12 +12,9 @@ export default function Home() {
       <section id="introduction">
         <Introduction />
       </section>
-      <div className="min-h-screen ">
-        <section id="about" className="pt-20 py-[3%] px-[4%]">
+      <div className="">
+        <section id="about" >
           <About />
-        </section>
-        <section id="mission" className="pt-20 py-[3%] px-[4%]">
-          <Mission />
         </section>
         <section id="ecosystem" className="pt-20 py-[3%] px-[4%]">
           <Ecosystem />

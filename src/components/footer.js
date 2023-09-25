@@ -60,7 +60,7 @@ const Footer = () => {
               </p>
               <div className="flex gap-x-1">
                 {socials.map(({ id, icon: Icon, link }) => (
-                  <a className="bg-[#2ac4c8] block hover:bg-[#1c898d] cursor-pointer p-3 rounded-full">
+                  <a key={id} className="bg-[#2ac4c8] block hover:bg-[#1c898d] cursor-pointer p-3 rounded-full">
                     <Icon className="w-6 h-6" />
                   </a>
                 ))}
@@ -93,7 +93,7 @@ const Footer = () => {
             <div className="flex flex-col space-y-3 w-56  ">
               <h3 className="text-xl font-bold text-white">Contacts</h3>
               {contacts.map(({ id, name, link, icon: Icon }) => (
-                <div className="flex w-full items-center gap-x-2 break-words  ">
+                <div key={id} className="flex w-full items-center gap-x-2 break-words  ">
                   <Icon className="w-6 h-6 shrink-0 text-black " />
                   <a
                     className="block w-max break-words underline-animation text-gray-400   hover:text-white "

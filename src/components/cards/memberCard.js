@@ -29,12 +29,12 @@ const MemberCard = ({
       <div
         onMouseEnter={() => setShowMeadiaIcons(true)}
         onMouseLeave={() => setShowMeadiaIcons(false)}
-        className={`flex relative z-0 text-black flex-col  w-64  h-[24rem] justify-between pb-[15px]  items-center gap-y-3 bg-white rounded-md ${
+        className={`flex relative z-0 text-black flex-col  w-64  h-[26rem] justify-between pb-[15px]  items-center  bg-white rounded-md ${
           showMeadiaIcons ? "" : ""
         }  hover:shadow-2xl  shadow-black`}
       >
         <div
-          style={{ backgroundImage: `url(${image})`}}
+          style={{ backgroundImage: `url(${image})` }}
           className={`h-full w-full z-0 relative bg-cover  bg-center ${
             showMeadiaIcons ? " " : ""
           } `}
@@ -43,14 +43,14 @@ const MemberCard = ({
             <div className="absolute border inset-0 bg-fill-anim-1 bg-[#44b31f] bg-opacity-60"></div>
           ) : null}
         </div>
-        <div className={`w-full space-y-6  ${showMeadiaIcons ? "" : ""}`}>
+        <div className={`w-full space-y-3  ${showMeadiaIcons ? "" : ""}`}>
           <h3 className="font-bold text-lg ">{name}</h3>
           <span>{title}</span>
-          {/* {showMeadiaIcons ? ( */}
           <div className="flex justify-center gap-x-2 items-center text-black">
             {socialLinks.map(({ name, link }) =>
               link ? (
                 <a
+                  key={name}
                   href={link}
                   target="_blank"
                   className="bg-gray-300 block hover:bg-[#9f9f9f] cursor-pointer p-3 rounded-full"
@@ -68,7 +68,6 @@ const MemberCard = ({
               ) : null
             )}
           </div>
-          {/* ) : null} */}
         </div>
         {/* <p>{description}</p> */}
       </div>
