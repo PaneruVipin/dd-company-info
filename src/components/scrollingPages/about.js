@@ -22,17 +22,18 @@ const About = () => {
   const Component = currentTab.component;
   return (
     <>
-      <div className="text-center h-[80vh] relative flex justify-between bg-cyan-500">
-        <div className="w-full p-10 text-[1.125rem] font-[400] leading-[150%]">
+      <div className="pt-20 px-[4%] gap-x-6 text-center h-[80vh] relative flex justify-between ">
+        <div className="w-full text-[1.125rem] font-[400] leading-[150%]">
           <Component />
         </div>
-        <div className="w-[30%] bg-emerald-500 ">
+        <div className="w-[40%] space-y-6">
           {tabs.map(({ name, title }) => (
+            // transition ease-in-out delay-150  hover:-translate-y-1 hover:rounded-2xl hover:scale-105 origin-top-right hover:bg-indigo-500 duration-300
             <button
-              className={`block  w-full py-10 transition ease-in-out delay-150  hover:-translate-y-1 hover:rounded-2xl hover:scale-105 origin-top-right hover:bg-indigo-500 duration-300 ${
+              className={`block  w-full py-10 hover:bg-[#1c898d]  rounded-xl  hover:text-white ${
                 currentTab.name == name
-                  ? " rounded-3xl -translate-y-1 bg-indigo-500 scale-105  origin-top-right"
-                  : ""
+                  ? "bg-[#1c898d] text-white"
+                  : "bg-white text-black"
               }`}
               onClick={handleTabClick}
               key={name}

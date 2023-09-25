@@ -15,7 +15,7 @@ const Members = ({ data }) => {
       {Object.keys(sortedDataByRow).map((key) => (
         <div
           key={key}
-          className="flex gap-y-6 md:gap-y-12 gap-x-6 flex-wrap justify-evenly"
+          className="flex gap-y-6 md:gap-y-12 gap-x-3 flex-wrap justify-evenly"
         >
           {sortedDataByRow[key].map(
             ({ id, name, title, description, image, socialLinks }) => (

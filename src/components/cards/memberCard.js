@@ -29,7 +29,7 @@ const MemberCard = ({
       <div
         onMouseEnter={() => setShowMeadiaIcons(true)}
         onMouseLeave={() => setShowMeadiaIcons(false)}
-        className={`flex relative z-0 text-black flex-col  w-64  h-[26rem] justify-between pb-[15px]  items-center  bg-white rounded-md ${
+        className={`flex space-y-4 relative z-0 text-black flex-col  w-[17rem]  h-[26rem] justify-between pb-[15px]  items-center  bg-white rounded-md ${
           showMeadiaIcons ? "" : ""
         }  hover:shadow-2xl  shadow-black`}
       >
@@ -43,7 +43,7 @@ const MemberCard = ({
             <div className="absolute border inset-0 bg-fill-anim-1 bg-[#44b31f] bg-opacity-60"></div>
           ) : null}
         </div>
-        <div className={`w-full space-y-3  ${showMeadiaIcons ? "" : ""}`}>
+        <div className={`w-full space-y-6  ${showMeadiaIcons ? "" : ""}`}>
           <h3 className="font-bold text-lg ">{name}</h3>
           <span>{title}</span>
           <div className="flex justify-center gap-x-2 items-center text-black">
