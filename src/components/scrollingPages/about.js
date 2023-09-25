@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Mission from "../tabs/about/mission";
 import Vission from "../tabs/about/vission";
 import WhoWeAre from "../tabs/about/whoWeAre";
