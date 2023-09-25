@@ -2,16 +2,21 @@ import { IoLogoGooglePlaystore, IoLogoAppleAppstore } from "react-icons/io5";
 import { BsChevronDoubleDown } from "react-icons/bs";
 const Header = () => {
   const links = [
-    { id: 1, name: "CLIMSTRIPE SHIFT", path: "https://google.com" },
-    { id: 2, name: "KABADPE", path: "https://google.com" },
-    { id: 3, name: "GREENSAMAN", path: "https://google.com" },
-    { id: 4, name: "CLIMCONNECT", path: "https://google.com" },
+    { id: 1, name: "CLIMSTRIPE SHIFT" },
+    { id: 2, name: "KABADPE", path: "https://google.com", target: "_blank" },
+    { id: 3, name: "GREENSAMAN", path: "https://google.com", target: "_blank" },
+    {
+      id: 4,
+      name: "CLIMCONNECT",
+      path: "https://google.com",
+      target: "_blank",
+    },
   ];
   return (
     <>
       <div className="flex  px-[4%] justify-between items-center">
         <div className="flex mb-3  w-[50%]">
-          {links.map(({ id, name, path }) => (
+          {links.map(({ id, name, path, target }) => (
             <a
               className={` bg-opacity-85 hover:h-16 -ml-2 text-center block font-light  text-white text-[13px] w-full   rounded-b-[3rem]  pt-7 ${
                 id == 1
@@ -26,7 +31,7 @@ const Header = () => {
               } `}
               key={id}
               href={path}
-              target="_blank"
+              target={target}
             >
               <>
                 <span className="block ">

@@ -6,10 +6,20 @@ const EcosystemCard = ({
   plusIcon,
   websiteLogo,
 }) => {
+  const extraCSS =
+    theme == "primary"
+      ? "bg-red-500 text-white"
+      : theme == "secondry"
+      ? "bg-indigo-500 text-white"
+      : theme == "green"
+      ? "bg-green-500 text-white"
+      : theme == "blue"
+      ? "bg-blue-400 text-white"
+      : "bg-white text-black";
   return (
     <div
-      className={`p-4   border  flex flex-col  bg-red-500 justify-between rounded-xl ${
-        websiteLogo ? "mt-12 relative z-0" : "h-full"
+      className={`p-4   border  flex flex-col  ${extraCSS} justify-between rounded-xl ${
+        websiteLogo ? "mt-12 relative z-0 h-32" : "h-full"
       }`}
     >
       {websiteLogo ? (
@@ -20,10 +30,13 @@ const EcosystemCard = ({
           />
         </div>
       ) : null}
+
       <div className="flex justify-end">
-        <a className=" cursor-pointer ">
-          <IoAddCircleOutline className="w-8 h-8" />
-        </a>
+        {plusIcon ? (
+          <a href={plusIcon} className=" cursor-pointer ">
+            <IoAddCircleOutline className="w-8 h-8" />
+          </a>
+        ) : null}
       </div>
       <div className="space-y-3">
         <div>{text}</div>

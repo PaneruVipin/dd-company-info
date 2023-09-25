@@ -7,7 +7,7 @@ const Ecosystem = () => {
         id: 1,
         text: "CSS",
         websiteLogo: "css-logo.png",
-        theme: "primary",
+        // theme: "primary",
         height: "min",
       },
       {
@@ -23,13 +23,13 @@ const Ecosystem = () => {
         text: "KABADPE",
         goToThisPage: "https://google.com",
         plusIcon: "https://google.com",
-        theme: "primary",
+        theme: "secondry",
       },
       {
         id: 4,
         text: "Waste to wealth journey starts here",
         plusIcon: "https://google.com",
-        theme: "primary",
+        // theme: "primary",
       },
     ],
     [
@@ -41,7 +41,7 @@ const Ecosystem = () => {
       you need
       `,
         plusIcon: "https://google.com",
-        theme: "primary",
+        // theme: "primary",
       },
       {
         id: 6,
@@ -49,7 +49,7 @@ const Ecosystem = () => {
       SAMAN SHOP`,
         goToThisPage: "https://google.com",
         plusIcon: "https://google.com",
-        theme: "primary",
+        theme: "green",
       },
     ],
     [
@@ -59,7 +59,7 @@ const Ecosystem = () => {
       CONNECT`,
         goToThisPage: "https://google.com",
         plusIcon: "https://google.com",
-        theme: "primary",
+        theme: "blue",
         height: "min",
       },
       {
@@ -74,7 +74,7 @@ const Ecosystem = () => {
     ],
   ];
   return (
-    <div className=" ">
+    <div className="space-y-10 ">
       <h1 className=" text-center font-bold text-[50px] font-family-1 text-black">
         CSS ecosystem to fight Global warming
       </h1>
@@ -93,12 +93,14 @@ const Ecosystem = () => {
               }) => (
                 <div
                   key={id}
-                  className={`${height == "min" ? "h-56" : "h-full"}`}
+                  className={`${height == "min" ? "h-64" : "h-full"}`}
                 >
                   <EcosystemCard
                     websiteLogo={websiteLogo}
+                    plusIcon={plusIcon}
                     text={text}
                     goToThisPage={goToThisPage}
+                    theme={theme}
                   />
                 </div>
               )

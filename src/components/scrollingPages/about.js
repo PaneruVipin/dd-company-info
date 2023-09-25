@@ -22,8 +22,8 @@ const About = () => {
   const Component = currentTab.component;
   return (
     <>
-      <div className="pt-20 px-[4%] gap-x-6 text-center h-[80vh] relative flex justify-between ">
-        <div className="w-full text-[1.125rem] font-[400] leading-[150%]">
+      <div className="pt-20 px-[4%] gap-x-10 text-center h-[80vh] relative flex justify-between ">
+        <div className="w-full text-[1.125rem] font-[400] leading-[150%] text-black">
           <Component />
         </div>
         <div className="w-[40%] space-y-6">

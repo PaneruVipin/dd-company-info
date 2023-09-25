@@ -1,7 +1,7 @@
 const WhoWeAre = () => {
   return (
     <>
-      <p className=" text-white ">
+      <p className="  ">
         ClimStripe Shift name comes from Climate Stripe Shift. Where we aim to
         shift back the climate stripes from Red to Blue. ClimStripe Shift
         Private Limited, formerly known as PlanEact, is a dynamic and innovative
