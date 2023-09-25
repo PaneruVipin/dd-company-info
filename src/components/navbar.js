@@ -10,31 +10,28 @@ const Navbar = () => {
     { id: 6, name: "Team", path: "#team" },
   ];
   return (
-    <>
-      <div className="flex justify-between items-center pr-[2%] py-4 px-10">
-        <div className="flex gap-x-6 ml-[2%]">
-          <img
-            className="w-44 h-10 object-contain "
-            src="css-logo.png"
-          ></img>
-          {navs.map(({ id, name, path }) => (
-            <Link
-              className=" text-white font-bold hover:text-[#0e4e51]"
-              key={id}
-              href={path}
-            >
-              {name}
-            </Link>
-          ))}
-        </div>
+    <div className="flex justify-between items-center pr-[2%] py-4 ">
+      <div className="flex gap-x-6 ml-[2%]">
+        <img className="w-44 h-10 object-contain " src="css-logo.png"></img>
+        {navs.map(({ id, name, path }) => (
+          <Link
+            className=" text-white font-bold hover:text-[#0e4e51]"
+            key={id}
+            href={path}
+          >
+            {name}
+          </Link>
+        ))}
+      </div>
+      <div>
         <Link
-          className=" text-white font-bold hover:text-[#0e4e51]"
+          className=" text-white font-bold hover:text-[#0e4e51] mr-10"
           href="#investor_info"
         >
           Investors Info
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

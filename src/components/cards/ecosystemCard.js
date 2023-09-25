@@ -5,6 +5,7 @@ const EcosystemCard = ({
   text,
   plusIcon,
   websiteLogo,
+  backgroundImage,
 }) => {
   const extraCSS =
     theme == "primary"
@@ -18,6 +19,7 @@ const EcosystemCard = ({
       : "bg-white text-black";
   return (
     <div
+    style={{ backgroundImage: `url(${backgroundImage})` }}
       className={`p-4   border  flex flex-col  ${extraCSS} justify-between rounded-xl ${
         websiteLogo ? "mt-12 relative z-0 h-32" : "h-full"
       }`}

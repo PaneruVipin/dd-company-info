@@ -48,9 +48,8 @@ const Footer = () => {
     { id: 4, icon: AiFillInstagram, link: "" },
   ];
   return (
-    <>
-      <div className=" bg-footer_bg break-words bg-no-repeat bg-right text-[15px] font-medium">
-        <div className="bg-[#0e4e51] bg-opacity-95">
+      <div className=" bg-footer_bg break-words bg-no-repeat bg-right text-[15px] font-medium ">
+        <div className="bg-[#0e4e51] bg-opacity-95 px-[2.5%]">
           <div className="flex justify-between  px-[2%] py-[4%]">
             <div className="flex flex-col space-y-4 max-w-[25%] ">
               <h3 className="text-xl font-bold text-white">About</h3>
@@ -116,7 +115,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 export default Footer;

@@ -70,6 +70,7 @@ const Ecosystem = () => {
       `,
         plusIcon: "https://google.com",
         theme: "primary",
+        backgroundImage:"footer-bg-1.png"
       },
     ],
   ];
@@ -90,6 +91,7 @@ const Ecosystem = () => {
                 goToThisPage,
                 websiteLogo,
                 height,
+                backgroundImage
               }) => (
                 <div
                   key={id}
@@ -101,6 +103,7 @@ const Ecosystem = () => {
                     text={text}
                     goToThisPage={goToThisPage}
                     theme={theme}
+                    backgroundImage={backgroundImage}
                   />
                 </div>
               )
