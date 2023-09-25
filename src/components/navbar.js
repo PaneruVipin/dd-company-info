@@ -4,7 +4,7 @@ const Navbar = () => {
   const navs = [
     { id: 1, name: "Introduction", path: "/" },
     { id: 2, name: "About us", path: "#about" },
-    { id: 3, name: "Mission", path: "#about#mission" },
+    { id: 3, name: "Mission", path: "#about" },
     { id: 4, name: "Ecosystem", path: "#ecosystem" },
     { id: 5, name: "Impact", path: "#impact" },
     { id: 6, name: "Team", path: "#team" },
